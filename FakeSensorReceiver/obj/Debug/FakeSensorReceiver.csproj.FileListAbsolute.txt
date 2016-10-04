@@ -1,0 +1,1 @@
+c:\users\istvanmarki\documents\visual studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\bin\Debug\FakeSensorReceiver.exe.config
