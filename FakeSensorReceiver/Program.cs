@@ -21,9 +21,9 @@ namespace FakeSensorReceiver
         {
 
             // Listening to a port (port number must be identical to server)
-            UdpClient simpleSocket = new UdpClient(7080);
+            UdpClient simpleSocket = new UdpClient(7000);
 
-            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
+            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Broadcast, 7000);
 
             //Go to an infinite loop
 
@@ -35,25 +35,29 @@ namespace FakeSensorReceiver
 
                 String text = Encoding.ASCII.GetString(databuffer);
 
-                string[] data = text.Split(' ');
-                string clientName = data[0];
-                string text1 = data[1] + data[2];
+
+
+                string[] data = text.Split('\n');
+                //string clientName = data[0];
+                //string text1 = data[1] + data[2];
 
                 int light;
                 int temp;
                 String timestamp;
 
-                TextReader tr = new StringReader(text);
-                String str1 = tr.ReadLine();
-                String str2 = tr.ReadLine();
-                String str3 = tr.ReadLine();
+                //TextReader tr = new StringReader(text);
+                //String str1 = tr.ReadLine();
+                //String str2 = tr.ReadLine();
+                //String str3 = tr.ReadLine();
 
-                light = Convert.ToInt32(str1.Split(' ')[1]);
-                temp = Convert.ToInt32(str2.Split(' ')[1]);
+                light = Convert.ToInt32(data[1].Split(' ')[1]);
+                temp = Convert.ToInt32(data[2].Split(' ')[1]);
 
-                timestamp = str3.Split(' ')[1];
+                timestamp = data[0].Split(' ')[1];
 
-                Console.WriteLine(text);
+                Console.WriteLine("The current time is: {0} \n The ligh sensor shows {1} LUMEN and \n\tthe temperature is {2} \n\t Fahrenheit \n\n", timestamp, light, temp);
+
+
 
 
             }

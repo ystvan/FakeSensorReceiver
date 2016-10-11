@@ -1,1 +1,6 @@
 c:\users\istvanmarki\documents\visual studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\bin\Debug\FakeSensorReceiver.exe.config
+C:\Users\IstvanMarki\Documents\Visual Studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\bin\Debug\FakeSensorReceiver.exe
+C:\Users\IstvanMarki\Documents\Visual Studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\bin\Debug\FakeSensorReceiver.pdb
+C:\Users\IstvanMarki\Documents\Visual Studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\obj\Debug\FakeSensorReceiver.csprojResolveAssemblyReference.cache
+C:\Users\IstvanMarki\Documents\Visual Studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\obj\Debug\FakeSensorReceiver.exe
+C:\Users\IstvanMarki\Documents\Visual Studio 2015\Projects\FakeSensorReceiver\FakeSensorReceiver\obj\Debug\FakeSensorReceiver.pdb
